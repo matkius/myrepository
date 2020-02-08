@@ -1,25 +1,4 @@
-package projektas;
 
-import java.util.Random;
-
-/**
- *
- * @author Matas
- * @param <E>
- */
-public class SkipList<E extends Comparable<E>> implements Set<E> {
-    
-    public static final int DEFAULT_NUMBER_OF_ELEMENTS = 40;
-    public static final float DEFAULT_PROBABILITY = 0.5f;
-    public static int LIST_HEIGHT;
-    public static float PROBABILITY;
-    public static int size;
-    private Node<E> last = null;
-    private Node<E> first = null;
-    public Random rnd = new Random();
-    
-    public SkipList(){
-        this(DEFAULT_NUMBER_OF_ELEMENTS, DEFAULT_PROBABILITY);   
     }
     
     public SkipList(int ExpectedNumberOfElements){
