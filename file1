@@ -34,11 +34,9 @@ public class SkipList<E extends Comparable<E>> implements Set<E> {
             first.links[i] = last;
         }  
     }
-    
+    zsdgzdsgzdfgzdfg
     @Override
-    public boolean contains(E e) {
-        if (e == null) {
-            throw new IllegalArgumentException("Element is null in contains(E element)");
+
         }
         return get(e) != null;
     }
