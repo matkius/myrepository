@@ -23,17 +23,7 @@
     public E get(E e){
         if (e == null) {
             throw new IllegalArgumentException("Element is null in get(E element)");
-        }
-        int i = LIST_HEIGHT-1;
-        Node<E> n = first;
-        while(i >= 0){
-            while(n.links[i] != null && n.links[i].element.compareTo(e) < 0)
-                n = n.links[i];
-            i--;
-        } 
-        if(n.links[0] == null && n.element.equals(e) || n.links[0] != null && n.links[0].element.equals(e))
-            return n.element;
-        else return null;
+
     }
     
     public void add(E e){
